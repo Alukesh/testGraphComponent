@@ -65,29 +65,39 @@ const GraphTable = () => {
         <div className="mt-4 text-[8px] flex gap-2">
           <span>Меньше</span>
           <div className="flex gap-[2px]">
+            
             <button className="group relative w-[15px] aspect-square bg-[#EDEDED]">
-              <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2">
+              <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2 mb-2">
                 <p className="whitespace-nowrap">No contributions</p>
+                <div className="absolute left-1/2 -translate-x-2 bg-black w-3 aspect-square rotate-45"></div>
               </div>
             </button>
+            
             <button className="group relative w-[15px] aspect-square bg-[#ACD5F2]">
-              <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2">
+              <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2 mb-2">
                 <p className="whitespace-nowrap">1-9 contributions</p>
+                <div className="absolute left-1/2 -translate-x-2 bg-black w-3 aspect-square rotate-45"></div>
               </div>
             </button>
+            
             <button className="group relative w-[15px] aspect-square bg-[#7FA8C9]">
-              <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2">
+              <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2 mb-2">
                 <p className="whitespace-nowrap">10-19 contributions</p>
+                <div className="absolute left-1/2 -translate-x-2 bg-black w-3 aspect-square rotate-45"></div>
               </div>
             </button>
+            
             <button className="group relative w-[15px] aspect-square bg-[#527BA0]">
-              <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2">
+              <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2 mb-2">
                 <p className="whitespace-nowrap">20-29 contributions</p>
+                <div className="absolute left-1/2 -translate-x-2 bg-black w-3 aspect-square rotate-45"></div>
               </div>
             </button>
+            
             <button className="group relative w-[15px] aspect-square bg-[#254E77]">
-              <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2">
+              <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2 mb-2">
                 <p className="whitespace-nowrap">30+ contributions</p>
+                <div className="absolute left-1/2 -translate-x-2 bg-black w-3 aspect-square rotate-45"></div>
               </div>
             </button>
           </div>

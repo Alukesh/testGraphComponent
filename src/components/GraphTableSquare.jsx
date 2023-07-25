@@ -23,9 +23,12 @@ const GraphTableSquare = ({ date, contributions }) => {
       className={`z-1 group relative text-[9px] w-[15px] aspect-square ${contributionsClasses} outline-none border border-solid hover:border-[#00000050] focus:border-[#00000090] focus:border`}
     >
       {/* {idx} */}
-      <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2">
+      <div className="z-10 absolute hidden group-focus:block rounded-[3px] bg-black p-2 bottom-full text-[#fff] text-xs font-normal -translate-x-1/2 ml-2 mb-2">
         <p>{contributions ?? 'no '} contributions</p>
         <span className="whitespace-nowrap text-[#7C7C7C]">{moment(date).format('dddd, MMMM D, yyyy')}</span>
+        <div className="absolute left-1/2 -translate-x-2 bg-black w-3 aspect-square rotate-45">
+
+        </div>
       </div>
     </button>
   );
