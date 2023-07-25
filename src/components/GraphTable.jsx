@@ -4,6 +4,9 @@ import moment from "moment";
 import axios from "axios";
 
 const monthList = [
+  "Янв.",
+  "Февр.",
+  "Март ",
   "Апр.",
   "Май ",
   "Июнь ",
@@ -13,10 +16,9 @@ const monthList = [
   "Окт.",
   "Нояб.",
   "Дек.",
-  "Янв.",
-  "Февр.",
-  "Март ",
 ];
+var cur = new Date().getMonth() + 1
+var sortedMonthList = [...monthList.slice(cur), ...monthList.slice(0,cur)]
 
 const GraphTable = () => {
   const [graph, setGraph] = useState({});
@@ -24,7 +26,7 @@ const GraphTable = () => {
   useEffect(() => {
     const response = axios("https://dpg.gg/test/calendar.json")
       .then(({ data }) => {
-        console.log(data["2022-06-06"]);
+        // console.log(data["2022-06-06"]);
         setGraph(data);
       })
       .catch((err) => console.log(err));
@@ -47,7 +49,7 @@ const GraphTable = () => {
       </div>
       <div className="flex flex-col text-[#959494] text-xs font-normal">
         <div className="flex justify-around">
-          {monthList.map((text) => (
+          {sortedMonthList.map((text) => (
             <span key={text}>{text}</span>
           ))}
         </div>
